@@ -1,101 +1,113 @@
-# Chitchatter
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">闲聊</font></font></h1><a id="user-content-chitchatter" class="anchor" aria-label="永久链接：闲聊" href="#chitchatter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/jeremyckahn/chitchatter/blob/develop/public/logo/logo.svg"><img src="/jeremyckahn/chitchatter/raw/develop/public/logo/logo.svg" alt="闲聊标志" style="max-width: 100%;"></a></p>
+<p dir="auto"><sub><font style="vertical-align: inherit;"><a href="https://github.com/ramyashreeshetty"><font style="vertical-align: inherit;">徽标由@ramyashreeshetty</font></a><font style="vertical-align: inherit;">提供</font></font><a href="https://github.com/ramyashreeshetty"><font style="vertical-align: inherit;"></font></a></sub></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 是一款免费（价格和自由度都免费）的通信工具。它旨在成为与他人私密安全地联系的最简单方式，它具有以下特点：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完全开源（根据</font></font><a href="/jeremyckahn/chitchatter/blob/develop/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GPL v2</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">点对点
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只要可能，否则使用 TURN 服务器来确保可靠的对等连接</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">端到端加密（通过</font></font><a href="https://webrtc-security.github.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WebRTC</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">短暂的
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">消息内容永远不会持久保存到客户端或服务器上的磁盘上</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">去中心化
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有 API 服务器。 Chitchatter 运行所需要的只是用于静态资产的 GitHub 以及用于建立点对点通信的公共 WebTorrent 和 STUN/TURN 中继服务器。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可嵌入</font></font></li>
+<li><a href="#self-hosting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可自托管</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chichatter 使用</font></font><a href="https://vitejs.dev/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vite</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。如果没有</font></font><a href="https://github.com/dmotz/trystero"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trystero</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，安全网络和流媒体魔法就不可能实现</font><font style="vertical-align: inherit;">。文件传输功能由</font></font><a href="https://github.com/jeremyckahn/secure-file-transfer"><code>secure-file-transfer</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地位</font></font></h2><a id="user-content-status" class="anchor" aria-label="永久链接：状态" href="#status"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://snyk.io/test/github/jeremyckahn/chitchatter?targetFile=package.json" rel="nofollow"><img src="https://camo.githubusercontent.com/95c688807e9b889d359b9a360fdfa3d55461d11002ac81d3e89ec97174203429/68747470733a2f2f736e796b2e696f2f746573742f6769746875622f6a6572656d79636b61686e2f63686974636861747465722f62616467652e7376673f74617267657446696c653d7061636b6167652e6a736f6e" alt="已知漏洞" data-canonical-src="https://snyk.io/test/github/jeremyckahn/chitchatter/badge.svg?targetFile=package.json" style="max-width: 100%;"></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何使用它</font></font></h2><a id="user-content-how-to-use-it" class="anchor" aria-label="永久链接：如何使用" href="#how-to-use-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开</font></font><a href="https://chitchatter.im/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter.im/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并加入一个房间，开始与房间中的任何人聊天。默认情况下，房间名称是客户端生成的随机</font></font><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UUID 。要与某人私下交流，建议加入其中一个随机生成的房间，并通过您选择的安全媒介（例如</font></font></a><font style="vertical-align: inherit;"></font><a href="https://burnernote.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Burner Note</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://yopass.se/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yopass</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）将 URL（通过页面顶部的“🔗”按钮）分享给您想要与之交流的人</font><font style="vertical-align: inherit;">。您的用户名将呈现给您，最好事先与您将要聊天的人分享，以便他们知道他们正在与您交谈。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2><a id="user-content-features" class="anchor" aria-label="永久链接：特点" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个房间有多个对等点（仅受您的浏览器支持的对等连接数量限制）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公共和私人房间。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频和音频聊天。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">屏幕共享。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件共享：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无限的文件大小传输。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件在发送之前被加密，并由接收者解密（密钥是房间名称）。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 嵌入到其他网络应用程序中</font></font><code>iframe</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 Markdown 支持</font></font><a href="https://github.com/remarkjs/react-markdown"><code>react-markdown</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包括对代码语法突出显示的支持。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当新参与者加入时，来自同行的对话回填。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多行消息支持（按住</font></font><code>shift</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并按</font></font><code>enter</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深色和浅色主题。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过客户端</font></font><a href="https://en.wikipedia.org/wiki/Public-key_cryptography" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公钥加密</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实现自动对等验证。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反特征</font></font></h2><a id="user-content-anti-features" class="anchor" aria-label="永久链接：反特征" href="#anti-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">消息永远不会持久保存到磁盘上。当您离开对等房间时，消息将从内存中清除并且无法检索。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 是一款完全客户端通信应用程序。当无法建立直接对等连接时，它使用公共 WebTorrent 服务器建立对等连接和 STUN/TURN 中继服务器，但没有 Chitchatter API 服务器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有任何类型的分析、跟踪或遥&ZeroWidthSpace;&ZeroWidthSpace;测。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个社区驱动、不资助的项目，不赚钱。用户至上，不涉及任何企业影响或经济利益。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么需要另一个聊天应用？</font></font></h2><a id="user-content-why-another-chat-app" class="anchor" aria-label="永久链接：为什么还要另一个聊天应用程序？" href="#why-another-chat-app"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不乏用户友好的聊天应用程序，但它们依赖中央服务来促进沟通。很难信任这些中央服务，因为商业利益和</font></font><a href="https://www.npr.org/2022/08/12/1117092169/nebraska-cops-used-facebook-messages-to-investigate-an-alleged-illegal-abortion" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">政府压力</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可能迫使服务运营商违背用户的最佳利益。即使服务运营商善意地处理用户数据，</font></font><a href="https://www.cbsnews.com/news/fbi-may-have-found-way-to-unlock-san-bernardino-shooters-iphone/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">静态保存的加密数据仍有可能在</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">违背用户意愿的情况下被解密。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://dev.to/jeremyckahn/taking-the-power-back-with-web-meshes-omg" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 通过网络网格架构</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">围绕这些风险进行设计</font><font style="vertical-align: inherit;">。没有中央服务运营商存储或可能错误处理通信数据。某些服务需要在对等点之间建立初始连接，但除此之外，应用程序将使用直接的点对点通信来进行所有操作。 Chitchatter 使用的任何服务与该项目没有任何关联，并且可供所有人公开使用。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用例</font></font></h2><a id="user-content-use-cases" class="anchor" aria-label="永久链接：用例" href="#use-cases"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 为以下方面提供私密且安全的解决方案：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组织人群，例如工会或政治运动</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方便地将文本或数据从一台设备移动到另一台设备</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跨操作系统（如 Android 和 iOS）与朋友和家人进行视频聊天</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过屏幕共享进行 IT 故障排除</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">直播</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">共享密码等敏感信息</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多得多！</font></font></li>
+</ul>
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者备注</font></font></h2><a id="user-content-note-from-the-developer" class="anchor" aria-label="永久链接：开发者的说明" href="#note-from-the-developer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💻️ 项目状态</font></font></h3><a id="user-content-️-project-status" class="anchor" aria-label="永久链接：💻️ 项目状态" href="#️-project-status"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我认为 Chitchatter 功能齐全，因为它可以完成我个人需要它做的所有事情。我没有在未来添加重要功能的具体计划，但如果当时我觉得很有趣，我可能会这样做。</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我致力于修复</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报告的任何重大错误，因此</font><font style="vertical-align: inherit;">如果您发现错误，请</font></font><a href="https://github.com/jeremyckahn/chitchatter/issues/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提出问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！除此之外，在可预见的未来，Chitchatter 实际上处于维护模式。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您希望实现某项功能并愿意支付开发成本以确保其完成，请提交描述该功能的 GitHub 问题，并表明您愿意为此工作提供补偿。如果您不愿意付费，请无论如何打开 GitHub 问题。如果这样做看起来很有趣，我可能会实现它，但社区的其他成员也可能会通过拉取请求来实现它。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我总是会抽出时间来支持其他人的 Pull 请求。如果您愿意投入工作来改进 Chitchatter，我愿意帮助引导这项工作并交付它。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您不同意该项目的方向，欢迎您分叉 Chitchatter 并将其纳入另一个项目。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🏗️ 支持和定制开发</font></font></h3><a id="user-content-️-support-and-custom-development" class="anchor" aria-label="永久链接：🏗️ 支持和定制开发" href="#️-support-and-custom-development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我愿意根据您的需求付费安装和定制 Chitchatter。如果您想与我签订合同，为您定制一个 Chitchatter 版本，请发送电子邮件至</font></font><a href="mailto:jeremyckahn@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">jeremyckahn@gmail.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，告诉我您的开始想法。</font></font></p>
+<hr>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">真实性</font></font></h2><a id="user-content-veracity" class="anchor" aria-label="永久链接： 真实性" href="#veracity"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 安全模型的核心是它完全开源。您可以自由（并鼓励）全面审核项目源代码和基础设施。不仅可以根据</font></font><a href="/jeremyckahn/chitchatter/blob/develop/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GPL</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">条款获取源代码</font><font style="vertical-align: inherit;">，而且所有构建日志</font><font style="vertical-align: inherit;">也</font></font><a href="https://github.com/jeremyckahn/chitchatter/actions/workflows/pages/pages-build-deployment"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以公开访问。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想验证</font></font><a href="https://chitchatter.im/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter.im/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上托管的应用程序是否是 GitHub 上托管的应用程序，您可以使用</font></font><code>dig</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>$ dig chitchatter.im
 
-![Chitchatter logo](./public/logo/logo.svg)
+; &lt;&lt;&gt;&gt; DiG 9.18.1-1ubuntu1.1-Ubuntu &lt;&lt;&gt;&gt; chitchatter.im
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 61332
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
 
-<sub>Logo provided by [@ramyashreeshetty](https://github.com/ramyashreeshetty)</sub>
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;chitchatter.im.                        IN      A
 
-Chitchatter is a free (as in both price and freedom) communication tool. Designed to be the simplest way to connect with others privately and securely, it is:
-
-- Fully open source (licensed under [GPL v2](./LICENSE))
-- Peer-to-peer
-  - Whenever possible, otherwise a TURN server is used to ensure reliable peer connection
-- End-to-end encrypted (via [WebRTC](https://webrtc-security.github.io/))
-- Ephemeral
-  - Message content is never persisted to disk on either the client or server
-- Decentralized
-  - There is no API server. All that's required for Chitchatter to function is availability of GitHub for static assets, and public WebTorrent and STUN/TURN relay servers for establishing peer-to-peer communication.
-- Embeddable
-- [Self-hostable](#self-hosting)
-
-Chitchatter uses the [Create React App](https://github.com/facebook/create-react-app) toolchain. The secure networking and streaming magic would not be possible without [Trystero](https://github.com/dmotz/trystero). File transfer functionality is powered by [`secure-file-transfer`](https://github.com/jeremyckahn/secure-file-transfer).
-
-## Status
-
-- [![Known Vulnerabilities](https://snyk.io/test/github/jeremyckahn/chitchatter/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jeremyckahn/chitchatter?targetFile=package.json)
-
-## How to use it
-
-Open https://chitchatter.im/ and join a room to start chatting with anyone else who is in the room. By default, room names are random [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)s that are generated client-side. To privately communicate with someone, it is recommended to join one of these randomly-generated rooms and share the URL (via the "🔗" button at the top of the page) to whomever you wish to communicate with via a secure medium of your choosing (such as [Burner Note](https://burnernote.com/) or [Yopass](https://yopass.se/)). Your user name will be presented to you, and it would be good to share that with who you will be chatting with beforehand so they know they're talking to you.
-
-## Features
-
-- Multiple peers per room (limited only by the number of peer connections your browser supports).
-- Public and private rooms.
-- Video and audio chatting.
-- Screen sharing.
-- File sharing:
-  - Unlimited file size transfers.
-  - Files are encrypted prior to sending and decrypted by the receiver (the key is the room name).
-- Embedding into other web apps via `iframe`.
-- Markdown support via [`react-markdown`](https://github.com/remarkjs/react-markdown).
-  - Includes support for syntax highlighting of code.
-- Conversation backfilling from peers when a new participant joins.
-- Multiline message support (hold `shift` and press `enter`).
-- Dark and light themes.
-
-## Anti-features
-
-- Messages are never persisted to disk. When you leave a peer room, messages are cleared from memory and cannot be retrieved.
-- Chitchatter is an entirely client-side communication app. It uses public WebTorrent servers to establish peer connections and STUN/TURN relay servers when direct peer-to-peer connections cannot be established, but there is no Chitchatter API server.
-- No analytics, tracking, or telemetry of any kind.
-- This is a community-driven and unfunded project that makes no money. The users come first and there is no corporate influence or financial interest involved.
-
-## Why another chat app?
-
-There is no shortage of user-friendly chat apps available, but they rely on a central service to facilitate communication. It is difficult to trust these central services, as commercial interests and [government pressure](https://www.npr.org/2022/08/12/1117092169/nebraska-cops-used-facebook-messages-to-investigate-an-alleged-illegal-abortion) can compel service operators to work against the best interest of the users. Even when user data is handled in good faith by service operators, the possibility remains that [encrypted data held at rest may be decrypted](https://www.cbsnews.com/news/fbi-may-have-found-way-to-unlock-san-bernardino-shooters-iphone/) against the user's will.
-
-Chitchatter designs around these risks with a [web meshe architecture](https://dev.to/jeremyckahn/taking-the-power-back-with-web-meshes-omg). There is no central service operator that stores or potentially mishandles communication data. Some services are required to establish an initial connection between peers, but otherwise the app uses direct peer-to-peer communication for everything. Any services that are used by Chitchatter have no association with the project and are publicly available for all to use.
-
-## Use cases
-
-Chitchatter offers a private and secure solution for:
-
-- Organizing groups of people, such as unions or political movements
-- Conveniently moving text or data from one device to another
-- Video chatting with friends and family across operating systems (such as Android and iOS)
-- IT troubleshooting via screen sharing
-- Livestreaming
-- Sharing sensitive information such as passwords
-- Much more!
-
----
-
-## Note from the developer
-
-### 💻️ Project status
-
-I consider Chitchatter feature-complete inasmuch it does all the things I personally need it to do. I don't have specific plans to add significant functionality in the future, but I may do so if it seems fun to me at the time. **I am committed to fixing any significant bugs** that are reported, so please [open an issue](https://github.com/jeremyckahn/chitchatter/issues/new) if you discover one! Aside from that, Chitchatter is effectively in maintenance mode for the foreseeable future.
-
-If you would like a feature to be implemented and are willing to pay a development cost to ensure it gets done, please file a GitHub issue describing the feature and indicate that you are willing to compensate for the work. If you are not willing to pay, please open a GitHub issue regardless. I may implement it if it seems fun to do so, but other members of the community may also step up to implement it via Pull Requests.
-
-I will always make time support Pull Requests from others. If you're willing to put in the work to improve Chitchatter, I am willing to help shepherd that work along and get it shipped.
-
-If you don't agree with the direction of the project, you are welcome to fork Chitchatter and take it in another one.
-
-### 🏗️ Support and custom development
-
-I'm willing to do paid installations and customizations of Chitchatter for your needs. If you'd like to contract me to make a version of Chitchatter that is custom built for you, please email me at jeremyckahn@gmail.com and let me know what you have in mind to get started.
-
----
-
-## Veracity
-
-The core of Chitchatter's security model is the fact that it is fully open source. You are free (and encouraged) to fully audit the project source code and infrastructure. Not only is the source code available under the terms of the [GPL](./LICENSE), but [all build logs are publicly accessible](https://github.com/jeremyckahn/chitchatter/actions/workflows/pages/pages-build-deployment) as well.
-
-If you would like to verify that the app hosted at https://chitchatter.im/ is the one that is hosted on GitHub, you can use `dig`:
-
-```
-$ dig chitchatter.im
+;; ANSWER SECTION:
+chitchatter.im.         231     IN      CNAME   jeremyckahn.github.io.
+jeremyckahn.github.io.  231     IN      A       185.199.111.153
+jeremyckahn.github.io.  231     IN      A       185.199.110.153
+jeremyckahn.github.io.  231     IN      A       185.199.109.153
+jeremyckahn.github.io.  231     IN      A       185.199.108.153
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ dig chitchatter.im
 
 ; <<>> DiG 9.18.1-1ubuntu1.1-Ubuntu <<>> chitchatter.im
 ;; global options: +cmd
@@ -113,136 +125,149 @@ chitchatter.im.         231     IN      CNAME   jeremyckahn.github.io.
 jeremyckahn.github.io.  231     IN      A       185.199.111.153
 jeremyckahn.github.io.  231     IN      A       185.199.110.153
 jeremyckahn.github.io.  231     IN      A       185.199.109.153
-jeremyckahn.github.io.  231     IN      A       185.199.108.153
-```
+jeremyckahn.github.io.  231     IN      A       185.199.108.153" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要检查提供给最终用户的静态资产，您可以审核</font></font><a href="https://github.com/jeremyckahn/chitchatter/tree/gh-pages"><code>gh-pages</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目路线图</font></font></h2><a id="user-content-project-roadmap" class="anchor" aria-label="永久链接：项目路线图" href="#project-roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/users/jeremyckahn/projects/1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看完整的积压票证</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">环境</font></font></h2><a id="user-content-environments" class="anchor" aria-label="固定链接：环境" href="#environments"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">生产环境：</font></font><a href="https://chitchatter.im/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter.im/</font></font></a>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镜像：</font></font><a href="https://chitchatter.vercel.app/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter.vercel.app/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（注意对等点不能跨域连接）</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分期：</font></font><a href="https://chitchatter-git-develop-jeremyckahn.vercel.app/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter-git-develop-jeremyckahn.vercel.app/</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">软件开发工具包</font></font></h2><a id="user-content-sdk" class="anchor" aria-label="永久链接：SDK" href="#sdk"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用官方 Chitchatter SDK 将应用程序嵌入为</font><font style="vertical-align: inherit;">名为 的</font></font><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 组件</font></font></a><font style="vertical-align: inherit;"></font><code>&lt;chat-room /&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="highlight highlight-text-html-basic notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-kos">&lt;</span><span class="pl-ent">script</span> <span class="pl-c1">src</span>="<span class="pl-s">https://chitchatter.im/sdk.js</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">script</span><span class="pl-kos">&gt;</span>
 
-To examine the static assets that are served to end users, you can audit the [`gh-pages` branch](https://github.com/jeremyckahn/chitchatter/tree/gh-pages).
+<span class="pl-kos">&lt;</span><span class="pl-ent">chat-room</span> /&gt;</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<script src=&quot;https://chitchatter.im/sdk.js&quot;></script>
 
-## Project roadmap
-
-See the full ticket backlog [here](https://github.com/users/jeremyckahn/projects/1).
-
-## Environments
-
-- Production environment: https://chitchatter.im/
-  - Mirror: https://chitchatter.vercel.app/ (note that peers cannot connect across domains)
-- Staging: https://chitchatter-git-develop-jeremyckahn.vercel.app/
-
-## SDK
-
-You can use the official Chitchatter SDK to embed the app as a [Web Component](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) called `<chat-room />`.
-
-```html
-<script src="https://chitchatter.im/sdk.js"></script>
-
-<chat-room />
-```
-
-The `<chat-room />` component supports the following optional attributes:
-
-- `room`: The name of the Chitchatter room the user should join. The default value is the URL of the embedding page.
-- `user-name`: The friendly name of the user (which they can change).
-- `user-id`: The static ID of the user. The default value is a random UUID.
-- `root-url`: The URL of the Chitchatter instance to use. The default value is `https://chitchatter.im/`.
-- `color-mode`: `light` or `dark`. The default value is `dark`.
-- `play-message-sound`: Whether or not to play a sound when a user receives a message while the window is not in focus. The default value is `false`.
-
-As well as the following [standard `<iframe />` attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attributes):
-
-- `height`
-- `width`
-- `style`
-- `referrerpolicy`
-- `sandbox`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm dev`
-
-Runs the entire stack (client + WebTorrent tracker) locally.
-
-### `npm start`
-
-Runs the front end app in the development mode. Uses public WebTorrent trackers.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-
-### Self-hosting
-
-Chitchatter is designed to be forked and self-hosted. If you would like to change pairing or relay server configuration, or you simply prefer to control your own builds and versions, just [fork this repo](https://github.com/jeremyckahn/chitchatter/fork) and follow the steps below.
-
-#### Caveats
-
-Chitchatter peer connections are bound to the instance's domain. So, a user of Chitchatter at https://chitchatter.im/ would not be able to connect to a user of a Chitchatter instance on another domain (such as a personal GitHub Pages-hosted fork).
-
-#### Necessary steps after forking
-
-Assuming you are hosting Chitchatter on [GitHub Pages](https://pages.github.com/):
-
-1. Change the [`homepage` property in `package.json`](https://github.com/jeremyckahn/chitchatter/blob/1ea67e2c3a45115e054ebfe3457f2c3572c6213b/package.json#L4) to whatever URL your Chitchatter instance will be hosted from. This will be something like `https://github_user_or_org_name.github.io/chitchatter/`.
-2. Define a [`DEPLOY_KEY` GitHub Action secret](https://github.com/jeremyckahn/chitchatter/blob/e2bac732cf1288f7b5d0bec151098f18e8b1d0d6/.github/workflows/deploy.yml#L28-L31) (at `https://github.com/github_user_or_org_name/chitchatter/settings/secrets/actions`). See the docs for [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-ssh-private-key-deploy_key) for more information.
-
-#### Deployment
-
-##### On GitHub
-
-When hosted on GitHub Pages and the configuration above has been done, the Production environment is updated when the remote `main` branch is updated (once GitHub Actions are enabled).
-
-##### On non-GitHub hosts
-
-Build the app with `PUBLIC_URL="https://your-domain-here.com" npm run build`, and then serve the `build` directory. Any static file serving solution should work provided it is using a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
-
-#### Runtime configuration
-
-Explore the files in `src/config` to modify pairing and relay server configuration.
-
-### Troubleshooting
-
-If you run into any issues with a custom Chitchatter installation, first ensure that you are using [the latest version of the code](https://github.com/jeremyckahn/chitchatter/tree/main). If you are hosting your installation with GitHub Pages, sync your `main` branch and _not_ your `gh-pages` branch. Updating your `main` branch will trigger a proper rebuild of your `gh-pages` branch.
-
-- https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork
-
-#### Peers won't connect
-
-This could happen for a variety of reasons. The most likely of which is that one or more peers cannot connect directly and must use the configured STUN/TURN relay as a fallback. The standard relay is free and does not guarantee any level of service, so it may simply be unavailable for some time (or just not work at all for some users). There's not much to do other than wait until it becomes available again, or possibly try from another device or location.
-
-##### Issues specific to browsers with ad blocking extensions
-
-Some ad blockers (such as uBlock Origin) prevent connections to certain WebTorrent servers. This prevents Chitchatter peers from connecting. To work around this, you can either disable your ad blocker or [self-host your own Chitchatter instance](#self-hosting).
-
-##### Issues specific to iOS Safari
-
-Chitchatter works on iOS Safari, but browser-level bugs often prevent peers from rejoining the room when the browser is closed and later reopened (for instance, when switching applications). The suggested workaround for this issue is to refresh the page to rejoin the room.
-
-##### Issues specific to Firefox
-
-Per [#36](https://github.com/jeremyckahn/chitchatter/issues/36), check your `about:config` settings and ensure that `media.peerconnection.enabled` is **enabled**.
-
-##### Security
-
-Chitchatter undergoes [weekly security audits](https://github.com/jeremyckahn/chitchatter/blob/develop/.github/workflows/security.yml) to identify and address potential vulnerabilities. Reports from all audits can be found in [**Issues**](https://github.com/jeremyckahn/chitchatter/issues?q=%22Security+Report+-+%22).
-
-### Contributors
-
-<p align="center">
+<chat-room />" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该</font></font><code>&lt;chat-room /&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组件支持以下可选属性：</font></font></p>
+<ul dir="auto">
+<li><code>room</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用户应加入的聊天室的名称。默认值为嵌入页面的 URL。</font></font></li>
+<li><code>user-name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用户的友好名称（用户可以更改）。</font></font></li>
+<li><code>user-id</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用户的静态ID。默认值为随机 UUID。</font></font></li>
+<li><code>root-url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：要使用的 Chichatter 实例的 URL。默认值为</font></font><code>https://chitchatter.im/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><code>color-mode</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><code>light</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者</font></font><code>dark</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。默认值为</font></font><code>dark</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><code>play-message-sound</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：当窗口未处于焦点状态且用户收到消息时是否播放声音。默认值为</font></font><code>false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以及以下</font></font><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attributes" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准</font></font><code>&lt;iframe /&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<ul dir="auto">
+<li><code>height</code></li>
+<li><code>width</code></li>
+<li><code>style</code></li>
+<li><code>referrerpolicy</code></li>
+<li><code>sandbox</code></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发展闲聊</font></font></h2><a id="user-content-developing-chitchatter" class="anchor" aria-label="永久链接：发展闲聊" href="#developing-chitchatter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目前 Chitchatter 只能在 Linux 和 macOS 等 *NIX 系统上开发。如果您使用的是 Windows，则可以使用</font></font><a href="https://learn.microsoft.com/en-us/windows/wsl/install" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSL</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置 Linux 环境。</font></font></p>
+</div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要更改 Chitchatter，请从 GitHub 克隆源代码。确保已安装</font></font><a href="https://nodejs.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node 和 NPM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。然后在项目目录中运行：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>npm install
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="npm install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将安装所有依赖项。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可用脚本</font></font></h3><a id="user-content-available-scripts" class="anchor" aria-label="永久链接：可用脚本" href="#available-scripts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在项目目录中，您可以运行：</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><code>npm dev</code></h4><a id="user-content-npm-dev" class="anchor" aria-label="永久链接：npm dev" href="#npm-dev"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在本地运行整个堆栈（客户端 + WebTorrent 跟踪器）。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><code>npm start</code></h4><a id="user-content-npm-start" class="anchor" aria-label="永久链接： npm start" href="#npm-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在开发模式下运行前端应用程序。使用公共 WebTorrent 跟踪器。打开</font></font><a href="http://localhost:3000" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:3000</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在浏览器中查看。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您进行更改时，页面将重新加载。您还可能在控制台中看到任何 lint 错误。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><code>npm test</code></h4><a id="user-content-npm-test" class="anchor" aria-label="永久链接：npm 测试" href="#npm-test"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在交互式监视模式下启动测试运行程序。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><code>npm run build</code></h4><a id="user-content-npm-run-build" class="anchor" aria-label="永久链接： npm run build" href="#npm-run-build"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将用于生产的应用程序构建到</font></font><code>dist</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件夹中。它在生产模式下正确捆绑 React 并优化构建以获得最佳性能。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建被最小化并且文件名包含哈希值。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自托管</font></font></h3><a id="user-content-self-hosting" class="anchor" aria-label="永久链接：自托管" href="#self-hosting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 被设计为分叉和自托管。如果您想更改配对或中继服务器配置，或者您更喜欢控制自己的构建和版本，</font></font><a href="https://github.com/jeremyckahn/chitchatter/fork"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请分叉此存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并按照以下步骤操作。</font></font></p>
+<div class="markdown-alert markdown-alert-important" dir="auto"><p class="markdown-alert-title" dir="auto"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要的</font></font></p><p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 对等连接绑定到实例的域。因此， </font></font><a href="https://chitchatter.im/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://chitchatter.im/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上的 Chitchatter 用户</font><font style="vertical-align: inherit;">将无法连接到另一个域上的 Chitchatter 实例的用户（例如个人 GitHub Pages 托管的分支）。</font></font></p>
+</div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fork后必要的步骤</font></font></h4><a id="user-content-necessary-steps-after-forking" class="anchor" aria-label="永久链接：分叉后的必要步骤" href="#necessary-steps-after-forking"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://pages.github.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">假设您在GitHub Pages</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上托管 Chitchatter </font><font style="vertical-align: inherit;">：</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将该</font></font><a href="https://github.com/jeremyckahn/chitchatter/blob/1ea67e2c3a45115e054ebfe3457f2c3572c6213b/package.json#L4"><code>homepage</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">属性</font></font><code>package.json</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更改为托管 Chitchatter 实例的任何 URL。这将是类似的</font></font><code>https://github_user_or_org_name.github.io/chitchatter/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义</font></font><a href="https://github.com/jeremyckahn/chitchatter/blob/e2bac732cf1288f7b5d0bec151098f18e8b1d0d6/.github/workflows/deploy.yml#L28-L31"><code>DEPLOY_KEY</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub Action 密钥</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（位于</font></font><code>https://github.com/github_user_or_org_name/chitchatter/settings/secrets/actions</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。请参阅文档以</font></font><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-ssh-private-key-deploy_key"><code>peaceiris/actions-gh-pages</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取更多信息。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您使用</font></font><a href="https://github.com/sitek94/vite-deploy-demo?tab=readme-ov-file#fix-assets-links"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有自定义域的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub Pages ，则需要将存储库名称</font></font><code>base</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义</font></font><a href="https://github.com/jeremyckahn/chitchatter/blob/df6d10868e12ad13036a44f959796f4da35adc28/vite.config.ts#L35-L38"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><code>vite.config.ts</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.下面是一个示例：</font></font></li>
+</ol>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">const</span> <span class="pl-s1">config</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
+   <span class="pl-k">return</span> <span class="pl-s1">defineConfig</span><span class="pl-kos">(</span><span class="pl-kos">{</span>
+      <span class="pl-c1">base</span>: <span class="pl-s">'/chitchatter/'</span><span class="pl-kos">,</span>
+      <span class="pl-c1">build</span>: <span class="pl-kos">{</span>
+       ...
+<span class="pl-kos">}</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const config = () => {
+   return defineConfig({
+      base: '/chitchatter/',
+      build: {
+       ...
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></h4><a id="user-content-deployment" class="anchor" aria-label="永久链接：部署" href="#deployment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GitHub 上</font></font></h5><a id="user-content-on-github" class="anchor" aria-label="永久链接：在 GitHub 上" href="#on-github"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当托管在 GitHub Pages 上并且完成上述配置时，生产环境会在远程</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支更新时更新（启用 GitHub Actions 后）。</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在非 GitHub 主机上</font></font></h5><a id="user-content-on-non-github-hosts" class="anchor" aria-label="永久链接：在非 GitHub 主机上" href="#on-non-github-hosts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 构建应用程序</font></font><code>npm run build</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后提供</font></font><code>dist</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录。任何静态文件服务解决方案只要使用</font></font><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全上下文</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">就应该可以工作。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行时配置</font></font></h4><a id="user-content-runtime-configuration" class="anchor" aria-label="永久链接：运行时配置" href="#runtime-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索文件来</font></font><code>src/config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改配对和中继服务器配置。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">故障排除</font></font></h3><a id="user-content-troubleshooting" class="anchor" aria-label="永久链接：故障排除" href="#troubleshooting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您在自定义 Chitchatter 安装时遇到任何问题，请首先确保您使用的是</font></font><a href="https://github.com/jeremyckahn/chitchatter/tree/main"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新版本的代码</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。如果您使用 GitHub Pages 托管安装，请同步您的</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支而</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不是</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的</font></font><code>gh-pages</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支。更新您的</font></font><code>main</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分支将触发您的分支的正确重建</font></font><code>gh-pages</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<ul dir="auto">
+<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同伴无法连接</font></font></h4><a id="user-content-peers-wont-connect" class="anchor" aria-label="永久链接：同行无法连接" href="#peers-wont-connect"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发生这种情况的原因有多种。最有可能的情况是一个或多个对等点无法直接连接，必须使用配置的 STUN/TURN 中继作为后备。标准中继是免费的，并且不保证任何服务级别，因此它可能在一段时间内不可用（或者对于某些用户来说根本不起作用）。除了等待它再次可用，或者可能从其他设备或位置尝试之外，没有什么可做的。</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带有广告拦截扩展程序的浏览器特有的问题</font></font></h5><a id="user-content-issues-specific-to-browsers-with-ad-blocking-extensions" class="anchor" aria-label="永久链接：带有广告拦截扩展程序的浏览器特有的问题" href="#issues-specific-to-browsers-with-ad-blocking-extensions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">某些广告拦截器（例如 uBlock Origin）会阻止与某些 WebTorrent 服务器的连接。这会阻止 Chichatter 对等点进行连接。要解决此问题，您可以禁用广告拦截器或</font></font><a href="#self-hosting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自行托管您自己的 Chitchatter 实例</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iOS Safari 特有的问题</font></font></h5><a id="user-content-issues-specific-to-ios-safari" class="anchor" aria-label="永久链接：特定于 iOS Safari 的问题" href="#issues-specific-to-ios-safari"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 可在 iOS Safari 上运行，但浏览器级别的错误通常会在浏览器关闭并稍后重新打开时（例如，切换应用程序时）阻止同伴重新加入房间。针对此问题的建议解决方法是刷新页面以重新加入房间。</font></font></p>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Firefox 特有的问题</font></font></h5><a id="user-content-issues-specific-to-firefox" class="anchor" aria-label="固定链接：特定于 Firefox 的问题" href="#issues-specific-to-firefox"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据</font></font><a href="https://github.com/jeremyckahn/chitchatter/issues/36" data-hovercard-type="issue" data-hovercard-url="/jeremyckahn/chitchatter/issues/36/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#36</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，检查您的</font></font><code>about:config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置并确保</font></font><code>media.peerconnection.enabled</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无法从同伴处下载提供的文件</font></font></h4><a id="user-content-offered-files-cant-be-downloaded-from-peers" class="anchor" aria-label="永久链接：提供的文件无法从同行处下载" href="#offered-files-cant-be-downloaded-from-peers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 使用</font></font><a href="https://github.com/jimmywarting/StreamSaver.js"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">StreamSaver.js来促进大文件传输。众所周知， </font></font></a><font style="vertical-align: inherit;"></font><a href="https://www.freedownloadmanager.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FDM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">等下载管理器</font><font style="vertical-align: inherit;">会</font></font><a href="https://github.com/jimmywarting/StreamSaver.js/issues/325" data-hovercard-type="issue" data-hovercard-url="/jimmywarting/StreamSaver.js/issues/325/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">干扰 StreamSaver.js</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，因此建议在尝试接收文件时禁用此类下载管理器。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全</font></font></h3><a id="user-content-security" class="anchor" aria-label="固定链接：安全" href="#security"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter</font></font><a href="https://github.com/jeremyckahn/chitchatter/blob/develop/.github/workflows/security.yml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每周都会进行安全审核，</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以识别和解决潜在漏洞。所有审核报告均可在</font></font><a href="https://github.com/jeremyckahn/chitchatter/issues?q=%22Security+Report+-+%22"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中找到。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者</font></font></h3><a id="user-content-contributors" class="anchor" aria-label="永久链接：贡献者" href="#contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p align="center" dir="auto">
 <a href="https://github.com/jeremyckahn/chitchatter/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jeremyckahn/chitchatter" />
+  <img src="https://camo.githubusercontent.com/60222c89f33006590bd35348d4bbb34700674e57e410117143b18d0230213fef/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6a6572656d79636b61686e2f6368697463686174746572" data-canonical-src="https://contrib.rocks/image?repo=jeremyckahn/chitchatter" style="max-width: 100%;">
 </a>
 </p>
-
-## ⚠️ [Disclaimer](https://chitchatter.im/disclaimer)
-
-By using Chitchatter, you agree to accept **full responsibility** for your actions related to its use. Additionally, you agree **not** to hold any contributors to the Chitchatter project responsible for any result of your use of it. The developers of Chitchatter do not endorse illegal activity.
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><g-emoji class="g-emoji" alias="warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚠️</font></font></g-emoji> <a href="https://chitchatter.im/disclaimer" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">免责声明</font></font></a></h2><a id="user-content-️-disclaimer" class="anchor" aria-label="永久链接：⚠️免责声明" href="#️-disclaimer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Chitchatter，即表示您同意</font><font style="vertical-align: inherit;">对与其使用相关的行为承担</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部责任</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。此外，您同意</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不让</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chitchatter 项目的任何贡献者对您使用该项目的任何结果负责。 Chitchatter 的开发者不支持非法活动。</font></font></p>
+</article></div>
